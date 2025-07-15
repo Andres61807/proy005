@@ -1,8 +1,5 @@
 package es.cic.curso25.proy005;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.junit.jupiter.api.Test;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -14,7 +11,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class Proy005ApplicationTests {
+class TelefonoControllerIntegrationTest {
 
 	@Autowired
 	private MockMvc mockMvc;
@@ -27,10 +24,8 @@ class Proy005ApplicationTests {
 			.andReturn();
 	}
 
-	@Test
-	void testLista(){
-		List<String> lista = new ArrayList<>();
-		lista.add("pernera");
-	}
+	
+
+	
 
 }
